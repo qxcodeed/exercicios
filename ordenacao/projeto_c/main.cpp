@@ -4,6 +4,10 @@
 
 #include "libs/csortview.h"
 
+
+//sudo apt install qtcreator qt5-default libsfml-dev
+
+
 //cores rgbcymkw
 //red, green, blue, cyan, yellow, magenta, black, white
 
@@ -16,11 +20,13 @@ void swap(int * a, int * b){
 void minimum_sort(int * vet, int qtd){
     for(int i = 0; i < qtd - 1; i++){
         for(int j = i + 1; j < qtd; j++){
-            int pos[] = {i, j};
-            view_show(vet, qtd, pos, "gy");
+            int pos[] = {0, i, j};
+
+            view_show(vet, qtd, pos, "rgy");
+
             if(vet[j] < vet[i]){
                 swap(&vet[i], &vet[j]);
-                view_show(vet, qtd, pos, "yg");
+                view_show(vet, qtd, pos, "ryg");
             }
         }
     }
