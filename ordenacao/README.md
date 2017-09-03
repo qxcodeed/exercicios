@@ -4,7 +4,10 @@ Existem duas pastas aqui. Ambos são projetos do qtcreator para serem rodados no
 A pasta projeto\_c é para quem vai implementar ordenação em c puro.
 A pasta projeto\_cpp é para quem vai implementar em c++.
 
-# Atividades do módulo.
+## Assista o vídeo.
+[![Vídeo explicativo](video.png)](https://youtu.be/D_3RdjAMKco "Vídeo explicando o módulo")
+
+## Atividades do módulo.
 
 1. Implementar um embaralhador de vetor.
 2. Criar um vetor crescente e embaralhe.
