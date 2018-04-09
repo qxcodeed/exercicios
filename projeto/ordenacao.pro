@@ -7,9 +7,8 @@ CONFIG += c++11
 LIBS += -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
 
 HEADERS += \
-    libs/sortview.h \
-    libs/player.h \
-    libs/csortview.h
+    ed_base.h \
+    ed_sort.h
 
 SOURCES += \
     main.cpp

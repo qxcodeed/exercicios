@@ -1,9 +1,9 @@
 #include <iostream>
 #include <ctime>
 #include <cstdlib> //rand
+#include "ed_sort.h"
 
 using namespace std;
-#include "libs/csortview.h"
 
 //cores rgbcymkw
 //red, green, blue, cyan, yellow, magenta, black, white

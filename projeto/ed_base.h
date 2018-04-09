@@ -173,8 +173,8 @@ public:
     sfText(sf::Vector2f pos, std::string texto, sf::Color color = sf::Color::White, int size = 16)
     {
         this->setFont(*this->get_default_font());
-        //this->setColor(color);
-        this->setColor(color);
+        this->setFillColor(color);
+        this->setOutlineColor(color);
         this->setPosition(pos);
         this->setString(texto);
         this->setCharacterSize(size);
@@ -184,7 +184,7 @@ private:
 
 
     static sf::Font * get_default_font(){
-        const std::string _path = "/usr/share/fonts/truetype/freefont/FreeMonoBold.ttf";
+        const std::string _path = "../projeto/ed_font.ttf";
         static sf::Font font;
         static bool init = true;
         if(init){

@@ -2,8 +2,7 @@
 #define SORTVIEW_H
 
 #include <SFML/Graphics.hpp>
-
-#include "player.h"
+#include "ed_base.h"
 
 #include <queue>
 #include <sstream>
@@ -77,5 +76,31 @@ public:
         my_player->_push(painel.getTexture());
     }
 };
+
+static SortView sview;
+
+//versão cpp
+void view_show(std::vector<int> &vet, std::vector<int> pos = {}, std::string cores = ""){
+    sview.show(vet, pos, cores);
+}
+
+void view_set_bar(){
+    sview.set_bar_view();
+}
+
+void view_set_dot(){
+    sview.set_dot_view();
+}
+
+void view_set_faixa(int begin, int end){
+    sview.set_faixa(begin, end);
+}
+
+void view_lock(){
+    my_player->wait();
+}
+
+
+
 #endif
 
